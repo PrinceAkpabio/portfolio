@@ -1,0 +1,35 @@
+// Import default styles and theme colours
+@import "../../../assets/styles/main.scss";
+
+.page-menu {
+  position: absolute;
+  width: 692px;
+  height: 900px;
+  left: 628px;
+  top: 0px;
+  background: #000000;
+
+  .page-menu-list {
+    display: none;
+    position: absolute;
+    width: 30%;
+    bottom: 40%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+
+    .page-menu-item {
+      color: $essoloWhite;
+      visibility: hidden;
+      font-family: "Space Grotesk", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 82px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

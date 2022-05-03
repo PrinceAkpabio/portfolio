@@ -1,0 +1,21 @@
+<div class="page-wrapper">
+  <app-sidebar
+    [isSidebarOpened]="isSidebarOpened"
+    (sideBarOpenedEvent)="listenForSidebarEvents($event)"
+  ></app-sidebar>
+
+  <div class="page-wrapper-container">
+    <div id="pageWrapperId" class="page-content-container">
+      <div class="page-content">
+        <!-- Reflect the submenu page content here -->
+        <ng-content></ng-content>
+      </div>
+      <!-- <button (click)="scrollToTop()" class="scrollHoverBtn">
+        <img
+          src="../../../assets/icons/Iconly/Light/Arrow - Up 2.white.svg"
+          alt=""
+        />
+      </button> -->
+    </div>
+  </div>
+</div>
