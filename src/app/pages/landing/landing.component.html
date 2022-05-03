@@ -1,0 +1,24 @@
+<app-page-wrapper
+  pageWrapperParentPageText="Home"
+  pageWrapperPageTitle="Landing"
+  pageWrapperPageSubtitle="Make we see"
+  pageMenuId="dashboard-overview"
+  (emitIsOpen)="listenForMenuIsOpen($event)"
+>
+  <div class="hero-section">
+    <div class="title">
+      <span class="text"> Build. </span>
+      <span class="text"> Prototype. </span>
+      <span class="text"> Deploy. </span>
+    </div>
+
+    <div class="subtitle">
+      I am <span class="highlight">Prince Akpabio</span> and I can help you
+      create world class solutions.
+    </div>
+  </div>
+
+  <app-page-menu [isOpen]="isMenuOpen"></app-page-menu>
+</app-page-wrapper>
+
+<!-- (pageWrapperSelectedRoute)="pageWrapperRouteListener($event)" -->

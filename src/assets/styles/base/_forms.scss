@@ -1,0 +1,410 @@
+// General Card Styles
+
+.cardTitle {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.025em;
+  text-align: left;
+  color: $silentText;
+  text-shadow: 1px 1px rgb(0 0 0 / 18%);
+
+  &.center {
+    align-self: center;
+    justify-self: center;
+    text-align: center !important;
+  }
+
+  &.right {
+    align-self: center;
+    justify-self: center;
+    text-align: center !important;
+  }
+
+  &.noMargin {
+    margin: 0;
+  }
+}
+
+.mini-cardTitle {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: $silentText;
+  margin: 0;
+
+  &.center {
+    align-self: center;
+    justify-self: center;
+    text-align: center !important;
+  }
+
+  &.right {
+    align-self: center;
+    justify-self: center;
+    text-align: center !important;
+  }
+
+  &.noMargin {
+    margin: 0;
+  }
+}
+
+.cardSubtitle {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: right;
+  color: $silentText;
+  cursor: pointer;
+  text-shadow: 1px 1px rgb(0 0 0 / 8%);
+
+  &.small {
+    align-self: center;
+    justify-self: center;
+    text-align: center !important;
+    width: 70%;
+    cursor: none;
+  }
+
+  &.center {
+    align-self: center;
+    justify-self: center;
+    text-align: center !important;
+  }
+
+  &.right {
+    align-self: center;
+    justify-self: center;
+    text-align: center !important;
+  }
+
+  &.noMargin {
+    margin: 0;
+  }
+}
+
+.cardLegend {
+  //styleName: 14px Regular;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: $silentText;
+}
+
+.cardValue {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: $essoloBlack;
+}
+
+// Form inputs styles
+
+input:-internal-autofill-selected {
+  --background-color: transparent;
+}
+
+.formInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  background-color: transparent !important;
+  color: black !important;
+  padding: 0;
+  box-shadow: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+    color: $essoloBlack;
+    background: transparent;
+  }
+}
+
+.formInputSelection {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: $silentText;
+}
+
+.formInnerLinkText {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: right;
+  cursor: pointer;
+
+  color: $essoloRed;
+}
+
+.formButton {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 100%;
+  padding: 0.75rem 2rem 0.75rem 2rem;
+  color: $essoloWhite;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(336.71deg, #e0ad0f 15.05%, #eac659 84.95%);
+  box-shadow: -4px -4px 8px #ffffff, 4px 4px 8px rgba(51, 51, 51, 0.16);
+  border-radius: 16px;
+
+  &.inverse {
+    color: $essoloRed;
+    /* Gradient/Inverted/Background */
+
+    background: linear-gradient(
+        111.69deg,
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(0, 0, 0, 0.04) 100.12%
+      ),
+      #ffffff;
+    /* Neu/Buttons/Default */
+
+    box-shadow: -4px -4px 8px #ffffff, 4px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+
+    &:hover {
+    }
+  }
+
+  &.inverse-transparent {
+    color: $essoloRed;
+    background-color: transparent;
+    border: 1px solid $essoloRed;
+
+    &:hover {
+      border: none;
+      color: $essoloWhite;
+      background-color: $essoloRed;
+    }
+  }
+}
+
+.formButtonIcon {
+  background: linear-gradient(
+      315deg,
+      rgba(211, 121, 121, 0.5) 0%,
+      rgba(141, 25, 25, 0.5) 100%
+    ),
+    #dbab2b;
+  border-radius: 20px;
+  padding: 0.1rem;
+}
+
+/*
+* Custom checkbox and radio styling with a switch implementation for a checkbox
+@example-
+  <input id="c1"type="checkbox"><label for="c1">Checkbox</label>
+  <input id="c2"type="checkbox"checked><label for="c2">Checkbox</label>
+  <input id="r1"type="radio"name="radio"value="1"><label for="r1">Radio</label>
+  <input id="r2"type="radio"name="radio"value="2"checked><label for="r2">Radio</label>
+  * Switch examples
+  <input id="s1"type="checkbox"class="switch"><label for="s1">Switch</label>
+  <input id="s2"type="checkbox"class="switch"checked><label for="s2">Switch</label>
+  * Disabled examples
+  <input id="c1d"type="checkbox"disabled><label for="c1d">Checkbox</label>
+  <input id="c2d"type="checkbox"checked disabled><label for="c2d">Checkbox</label>
+  <input id="r1d"type="radio"name="radiod"value="1"disabled><label for="r1d">Radio</label>
+  <input id="r2d"type="radio"name="radiod"value="2"checked disabled><label for="r2d">Radio</label>
+  <input id="s1d"type="checkbox"class="switch"disabled><label for="s1d">Switch</label><input id="s2d"type="checkbox"class="switch"checked disabled><label for="s2d">Switch</label>
+   */
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    --active: #dbab2b;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, 0.3);
+    --border: none;
+    --border-hover: #dbab2b;
+    --background: linear-gradient(
+        291.76deg,
+        rgba(0, 0, 0, 0.08) 0.12%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      linear-gradient(0deg, #ffffff, #ffffff);
+
+    --disabled: #f6f8ff;
+    --disabled-inner: #e1e6f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    box-shadow: inset -4px -4px 8px #ffffff,
+      inset 4px 4px 8px rgba(0, 0, 0, 0.16);
+
+    &:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+        opacity var(--d-o, 0.2s);
+    }
+
+    &:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: 0.3s;
+      --d-t: 0.6s;
+      --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+
+    &:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+
+      &:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+      }
+
+      & + label {
+        cursor: not-allowed;
+      }
+    }
+
+    &:hover {
+      &:not(:checked) {
+        &:not(:disabled) {
+          // --bc: var(--border-hover);
+        }
+      }
+    }
+
+    &:focus {
+      // box-shadow: 0 0 0 var(--focus);
+    }
+
+    &:not(.switch) {
+      width: 21px;
+
+      &:after {
+        opacity: var(--o, 0);
+      }
+
+      &:checked {
+        --o: 1;
+      }
+    }
+
+    & + label {
+      font-size: 14px;
+      line-height: 21px;
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+  }
+
+  input[type="checkbox"] {
+    &:not(.switch) {
+      border-radius: 50%;
+
+      &:after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 6px;
+        top: 2px;
+        transform: rotate(var(--r, 20deg));
+      }
+
+      &:checked {
+        --r: 43deg;
+      }
+    }
+
+    &.switch {
+      width: 38px;
+      border-radius: 11px;
+
+      &:after {
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        // background: var(--ab, var(--border));
+        transform: translateX(var(--x, 0));
+      }
+
+      &:checked {
+        // --ab: var(--active-inner);
+        --x: 17px;
+      }
+
+      &:disabled {
+        &:not(:checked) {
+          &:after {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  input[type="radio"] {
+    border-radius: 50%;
+
+    &:after {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--active-inner);
+      opacity: 0;
+      transform: scale(var(--s, 0.7));
+    }
+
+    &:checked {
+      --s: 0.5;
+    }
+  }
+}

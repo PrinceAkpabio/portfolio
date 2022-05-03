@@ -1,0 +1,46 @@
+// Default colors
+$essoloRed: #dbab2b;
+$essoloBlack: #000000;
+$essoloWhite: #ffffff;
+$silentText: #00000066;
+$silentBoldText: #00000099;
+$essoloBodyColor: #ffffff;
+
+$essoloBodyCardWrapper: linear-gradient(
+    111.69deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.025) 100.12%
+  ),
+  #ffffff;
+
+$essoloCardWrapperBoxShadow: -8px -8px 16px #ffffff,
+  8px 8px 16px rgba(0, 0, 0, 0.16);
+
+$essoloSmallCardWrapper: linear-gradient(
+    111.69deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.025) 100.12%
+  ),
+  #ffffff;
+
+$essoloSmallCardWrapperBoxShadow: -4px -4px 8px #ffffff,
+  4px 4px 8px rgba(0, 0, 0, 0.16);
+
+$essoloSmallCardWrapperActiveBoxShadow: inset -4px -4px 8px #ffffff,
+  inset 4px 4px 8px rgba(0, 0, 0, 0.16);
+
+// $essoloBodyColor: #f9f9f9;
+$insetColor3: #cfcccc67;
+$borderBottom: 1px solid $essoloWhite;
+
+// background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #FFFFFF;
+
+$essoloRedShade: linear-gradient(
+  180deg,
+  rgba(229, 229, 229, 0.5) 0%,
+  rgba(229, 229, 229, 0.5) 100%
+);
+
+// Text Colors
+$successText: #2f8d00;
+$errorText: #ff0000;
